@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>For You ❤️</title>
+<style>
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    min-height: 100vh;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #ffd6e7, #fff0f6, #ffc1d9);
+    font-family: Georgia, "Times New Roman", serif;
+    color: #8f174d;
+  }
+  .card {
+    position: relative;
+    z-index: 2;
+    width: min(90%, 650px);
+    padding: 55px 30px;
+    text-align: center;
+    background: rgba(255,255,255,.78);
+    border: 2px solid rgba(255,105,160,.35);
+    border-radius: 30px;
+    box-shadow: 0 15px 45px rgba(180, 45, 100, .2);
+    backdrop-filter: blur(5px);
+  }
+  h1 {
+    margin: 0 0 18px;
+    font-size: clamp(38px, 8vw, 72px);
+  }
+  p {
+    margin: 10px 0;
+    font-size: clamp(22px, 4vw, 32px);
+    line-height: 1.45;
+  }
+  .small {
+    margin-top: 24px;
+    font-size: 19px;
+    color: #b33a70;
+  }
+  .rose {
+    position: absolute;
+    font-size: 42px;
+    animation: float 8s linear infinite;
+    opacity: .85;
+  }
+  @keyframes float {
+    0% { transform: translateY(110vh) rotate(0deg); opacity: 0; }
+    15% { opacity: .85; }
+    85% { opacity: .85; }
+    100% { transform: translateY(-15vh) rotate(360deg); opacity: 0; }
+  }
+  .r1{left:5%;animation-delay:0s}.r2{left:18%;animation-delay:2s}.r3{left:34%;animation-delay:4s}
+  .r4{left:52%;animation-delay:1s}.r5{left:70%;animation-delay:3s}.r6{left:88%;animation-delay:5s}
+</style>
+</head>
+<body>
+  <div class="rose r1">🌹</div><div class="rose r2">🌹</div>
+  <div class="rose r3">🌹</div><div class="rose r4">🌹</div>
+  <div class="rose r5">🌹</div><div class="rose r6">🌹</div>
+
+  <main class="card">
+    <h1>I Love You ❤️</h1>
+    <p>You are doing great!</p>
+    <p>I'm so proud of you. Keep going, beautiful. 🌹</p>
+    <div class="small">Just a little reminder that someone is always cheering for you. 💕</div>
+  </main>
+</body>
+</html>
